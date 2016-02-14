@@ -1,0 +1,381 @@
+//general & pseudo classes//
+//-----------------------
+input {
+    -webkit-appearance: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.border-bottom {
+    border-bottom: 2px solid #fff;
+    height: 32px;
+}
+
+.nopad {
+    padding: 0px;
+}
+
+.pad-normal {
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+.pad-large {
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
+
+.pad-top {
+    padding-top: 121px;
+}
+
+.pad-bottom {
+    padding-bottom: 66px;
+}
+
+//typography//
+//-----------
+.alt-h {
+    font-size: 36px;
+}
+
+.highlight {
+    color: $dark-orange;
+}
+
+.lowlight {
+    color: $dark-purple;
+}
+
+.alt-h {
+    font-size: 36px;
+}
+
+.icon {
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+}
+
+
+//elements//
+//-------
+
+.btn {
+    border: 2px solid #bbb;
+    padding: 16px 28px 18px 28px;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    transition: all .2s ease;
+    background: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    .icon {
+        margin-left: 7px;
+    }
+    &:hover {
+        background: #eee;
+        color: #777;
+    }
+}
+
+.btn-flex {
+    border: 2px solid #bbb;
+    padding: 16px 28px 18px 28px;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    transition: all .2s ease;
+    background: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    .icon {
+        margin-left: 7px;
+    }
+    &:hover {
+        background: #eee;
+        color: #777;
+    }
+}
+
+.page-title {
+    margin-bottom: 44px;
+}
+
+.ampersand {
+    font-family: 'open sans 400';
+    display: inline-block;
+    border-bottom: 3px solid;
+    font-size: 18px;
+    margin: 0px 22px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+//Intro Text//
+//-----------
+#services {
+    background-color: scale-color($white, $lightness: -2%);
+    position: relative;
+}
+
+#services-bg {
+    background: url('../img/student-life.jpg') transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 33.33333%;
+    z-index: 2;
+    background-size: cover;
+    background-position: -450px, 0px;
+}
+
+#services {
+    .columns {
+        position: relative;
+    }
+    .page-title {
+        margin-bottom: 22px;
+    }
+    .lead {
+        margin-bottom: 44px;
+    }
+}
+
+.service {
+    overflow: hidden;
+    width: 50%;
+    padding-right: 15px;
+    float: left;
+    margin-bottom: 33px;
+    h6 {
+        font-size: 14px;
+        color: #525252;
+        margin-bottom: 11px;
+    }
+}
+
+.service-text {
+    width: 90%;
+    float: left;
+}
+
+//Page split//
+//----------
+#work {
+    overflow: hidden;
+    background-color: $white;
+    .page-title {
+        margin-bottom: 22px;
+    }
+}
+
+//More About//
+//----------
+#blog {
+    background-color: scale-color($white, $lightness: -2%);
+    position: relative;
+}
+
+#blog-bg {
+    background: url('../img/milton club.jpg') transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 33.33333%;
+    z-index: 2;
+    background-size: cover;
+    background-position: 0px, 0px;
+}
+
+#blog {
+    .columns {
+        position: relative;
+    }
+    .page-title {
+        margin-bottom: 20px;
+    }
+    .lead {
+        margin-bottom: 44px;
+    }
+}
+
+//Cards//
+//------
+.information {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: scale-color($orange, $lightness: +95%);
+}
+
+.card {
+    background-color: $white;
+    font-family: 'open sans 400', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #272727;
+    border-radius: 2px;
+    .title {
+        line-height: 3rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .content {
+        padding: 1.3rem;
+        font-weight: 300;
+        border-radius: 0 0 2px 2px;
+    }
+    p {
+        margin: 0;
+    }
+    .action {
+        border-top: 1px solid rgba(160, 160, 160, 0.2);
+        padding: 1.3rem;
+    }
+    a {
+        color: $light-orange;
+        margin-right: 1.3rem;
+        transition: color 0.3s ease;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .image {
+        position: relative;
+        .title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1.3rem;
+            color: $white;
+        }
+        img {
+            border-radius: 2px 2px 0 0;
+        }
+    }
+}
+
+/***** SMARTPHONES *****/
+
+@media all and (max-width: 767px) {
+  #navigation {
+    background-color: #222;
+    padding-top: 25px;
+  }
+  #mobile-toggle {
+    display: block;
+  }
+  #menu {
+    float: left;
+    padding-top: 21px;
+    margin-bottom: 22px;
+    li {
+      float: none;
+      i {
+        display: none;
+      }
+    }
+  }
+  .logo {
+    display: none;
+  }
+  .nav-logo {
+    margin-top: -3px;
+  }
+  p.lead {
+    font-size: 16px;
+  }
+  #home-slider .slides li h1 {
+    font-size: 32px;
+  }
+  .flex-control-nav {
+    display: none !important;
+  }
+  #about-detail, #services-bg, #blog-bg {
+    display: none;
+  }
+  .filters li {
+    margin-bottom: 22px;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .service {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .project {
+    width: 100%;
+  }
+  .project-slider {
+    margin-bottom: 22px;
+  }
+  .blog-icon {
+    width: 15%;
+  }
+  .blog-title {
+    width: 85%;
+  }
+  .social-link {
+    width: 100% !important;
+  }
+  .hero-screens {
+    display: none;
+  }
+  #clients {
+    padding-bottom: 55px;
+  }
+  #form-name, #form-email {
+    width: 100%;
+  }
+}
+
+/***** TABLETS PORTRAIT & LANDSCAPE *****/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .project {
+    width: 50%;
+  }
+}
+
+/***** PORTRAIT TABLETS *****/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #menu li i {
+    display: none;
+  }
+  .service {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .form-upper {
+    width: 100%;
+    h5 {
+      border-right: none;
+    }
+  }
+  .form-lower {
+    width: 100%;
+    margin-bottom: 22px;
+    h5 {
+      border: none;
+    }
+  }
+  #form-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,93 @@
+//footer SCSS
+.full-width {
+  max-width: 1400px;
+}
+
+$text-color: $white;
+
+
+.footer {
+  background-color: $red;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: $text-color;
+  i {
+    font-size: 6rem;
+  }
+}
+
+.footer {
+  h4 {
+    color: $text-color;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 10px;
+  }
+  p, a {
+    font-weight: 300; 
+    font-size: 1.1rem;
+    color: $text-color;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+.footer {
+  .columns:nth-child(n+2) {
+    border-left: 1px solid scale-color($red, $lightness: -20%);
+    min-height: 280px;
+  }
+ }
+}
+
+.footer-links {
+  list-style-type: none;
+  li {
+    margin-top: .5em;
+  }
+}
+//secondary footer
+//------------------
+.footer-last {
+  background-color: $dark-red;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem;
+  
+  p {
+    &.slogan {
+      color: $white;
+      font-size: 1.6rem;
+      margin: 0 0 1rem;
+    }
+    &.copywrite {
+      color:$light-gray;
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+  .links a {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    &::after {
+      content: "|";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+    &:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: scale-color($red, $lightness: -30%);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  
+}

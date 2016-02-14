@@ -1,0 +1,248 @@
+/***** GENERAL & PSEUDO CLASSES *****/
+/* line 3, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+input {
+  -webkit-appearance: none; }
+  /* line 5, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  input:focus {
+    outline: none; }
+
+/* line 10, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.border-bottom {
+  border-bottom: 2px solid #fff;
+  height: 32px; }
+
+/* line 15, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.nopad {
+  padding: 0px; }
+
+/* line 19, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.offix {
+  overflow: hidden; }
+
+/* line 23, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.pad-normal {
+  padding-top: 66px;
+  padding-bottom: 66px; }
+
+/* line 28, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.pad-large {
+  padding-top: 121px;
+  padding-bottom: 121px; }
+
+/* line 33, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.pad-top {
+  padding-top: 121px; }
+
+/* line 37, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.pad-bottom {
+  padding-bottom: 66px; }
+
+/*** TYPOG ***/
+/* line 44, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.text-white {
+  color: #fff; }
+
+/* line 48, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.alt-h {
+  font-size: 36px; }
+
+/* line 52, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.highlight {
+  color: #e1816a; }
+
+/* line 56, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.lowlight {
+  color: #4570af; }
+
+/* line 60, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.red {
+  color: #ff1717; }
+
+/* line 64, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.alt-h {
+  font-size: 36px; }
+
+/* line 68, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.icon {
+  display: inline-block;
+  -webkit-backface-visibility: hidden; }
+
+/*** ELEMENTS ***/
+/* line 76, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.btn {
+  border: 2px solid #bbb;
+  padding: 16px 28px 18px 28px;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #777;
+  transition: all 0.2s ease;
+  background: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  /* line 91, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .btn .icon {
+    margin-left: 7px; }
+  /* line 94, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .btn:hover {
+    background: #eee;
+    color: #777; }
+
+/* line 100, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.btn-flex {
+  border: 2px solid #bbb;
+  padding: 16px 28px 18px 28px;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.2s ease;
+  background: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  /* line 115, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .btn-flex .icon {
+    margin-left: 7px; }
+  /* line 118, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .btn-flex:hover {
+    background: #eee;
+    color: #777; }
+
+/* line 124, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.divider {
+  position: relative;
+  background-size: cover !important; }
+
+/* line 129, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.page-title {
+  margin-bottom: 44px; }
+
+/* line 133, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.ampersand {
+  font-family: 'Montserrat';
+  display: inline-block;
+  border-bottom: 3px solid;
+  font-size: 18px;
+  margin: 0px 22px;
+  font-weight: bold;
+  line-height: 1.1; }
+
+/* line 145, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#services {
+  background-color: #ececec;
+  position: relative; }
+
+/* line 150, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#services-bg {
+  background: url("../img/student-life.jpg") transparent;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 33.33333%;
+  z-index: 2;
+  background-size: cover;
+  background-position: -450px, 0px; }
+
+/* line 164, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#services .columns {
+  position: relative; }
+
+/* line 167, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#services .page-title {
+  margin-bottom: 22px; }
+
+/* line 170, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#services .lead {
+  margin-bottom: 44px; }
+
+/* line 175, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.service {
+  overflow: hidden;
+  width: 50%;
+  padding-right: 15px;
+  float: left;
+  margin-bottom: 33px; }
+  /* line 181, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .service h6 {
+    font-size: 14px;
+    color: #525252;
+    margin-bottom: 11px; }
+
+/* line 188, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+.service-text {
+  width: 90%;
+  float: left; }
+
+/* line 195, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#work {
+  overflow: hidden; }
+  /* line 197, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  #work .page-title {
+    margin-bottom: 22px; }
+
+/* line 204, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#blog {
+  background-color: #ececec;
+  position: relative; }
+
+/* line 209, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#blog-bg {
+  background: url("../img/milton club.jpg") transparent;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 33.33333%;
+  z-index: 2;
+  background-size: cover;
+  background-position: 0px, 0px; }
+
+/* line 223, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#blog .columns {
+  position: relative; }
+
+/* line 226, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#blog .page-title {
+  margin-bottom: 20px; }
+
+/* line 229, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+#blog .lead {
+  margin-bottom: 44px; }
+
+@media all and (max-width: 767px) {
+  /* line 239, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  p.lead {
+    font-size: 16px; }
+  /* line 243, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  #services-bg,
+  #blog-bg {
+    display: none; }
+  /* line 246, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .service {
+    width: 100%;
+    padding-right: 0px; }
+  /* line 250, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .blog-icon {
+    width: 15%; }
+  /* line 253, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .blog-title {
+    width: 85%; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* line 263, /Users/olga/Desktop/foundation6Project/src/assets/scss/components/content.scss */
+  .service {
+    min-width: 100%;
+    max-width: 100%; } }
+
+/*# sourceMappingURL=content.css.map */

@@ -1,15 +1,12 @@
 //Vertical Align Mixin_______________
 //_________________________
-
 @mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-
-
 
 //Hero Area_______________
 //_________________________
@@ -19,18 +16,13 @@
     background-color: $purple;
     background-size: cover;
     padding: 12rem;
-    height: 50vh;
-  overflow: hidden;
-  
-h1 {
-    color: $light-orange;
-    text-align: center;
-    @include vertical-align;
-   
-  }
-
-
-   
+    overflow: hidden;
+    h1 {
+        color: $white;
+        text-align: center;
+        @include vertical-align;
+        font-size: 4rem;
+    }
 }
 
 .hero-subnav {

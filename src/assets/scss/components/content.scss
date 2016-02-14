@@ -22,8 +22,8 @@ input {
 }
 
 .pad-large {
-    padding-top: 121px;
-    padding-bottom: 121px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .pad-top {
@@ -37,16 +37,45 @@ input {
 //typography//
 //-----------
 .alt-h {
-    font-size: 36px;
+    font-size: 3.5rem;
+      font-family: "jubilat", sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
 .highlight {
     color: $dark-orange;
+    font-size: 5.5rem;
+     font-family: "jubilat", sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
 .lowlight {
     color: $dark-purple;
+    font-size: 3.5rem;
+      font-family: "jubilat", sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
+
+.lowlight-white {
+    color: $white;
+    font-size: 3.5rem;
+      font-family: "jubilat", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.intro_heading {
+    color: $dark-purple;
+    font-size: 5rem;
+    font-family: "jubilat", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+
 
 .alt-h {
     font-size: 36px;
@@ -125,12 +154,12 @@ input {
 
 //Intro Text//
 //-----------
-#services {
+#course-info {
     background-color: scale-color($white, $lightness: -2%);
     position: relative;
 }
 
-#services-bg {
+#course-info-bg {
     background: url('../img/student-life.jpg') transparent;
     background-repeat: no-repeat;
     position: absolute;
@@ -143,19 +172,19 @@ input {
     background-position: -450px, 0px;
 }
 
-#services {
+#course-info {
     .columns {
         position: relative;
     }
     .page-title {
-        margin-bottom: 22px;
+        margin-bottom: 1px;
     }
     .lead {
-        margin-bottom: 44px;
+        margin-bottom: 2px;
     }
 }
 
-.service {
+.courses {
     overflow: hidden;
     width: 50%;
     padding-right: 15px;
@@ -168,7 +197,7 @@ input {
     }
 }
 
-.service-text {
+.courses-text {
     width: 90%;
     float: left;
 }
@@ -177,7 +206,10 @@ input {
 //----------
 #work {
     overflow: hidden;
-    background-color: $white;
+    background-color: $light-purple;
+    text-align: center;
+   
+    
     .page-title {
         margin-bottom: 22px;
     }
@@ -185,12 +217,12 @@ input {
 
 //More About//
 //----------
-#blog {
+#edcol-info {
     background-color: scale-color($white, $lightness: -2%);
     position: relative;
 }
 
-#blog-bg {
+#edcol-info-bg {
     background: url('../img/milton club.jpg') transparent;
     background-repeat: no-repeat;
     position: absolute;
@@ -203,7 +235,7 @@ input {
     background-position: 0px, 0px;
 }
 
-#blog {
+#edcol-info {
     .columns {
         position: relative;
     }
@@ -218,8 +250,8 @@ input {
 //Cards//
 //------
 .information {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background-color: scale-color($orange, $lightness: +95%);
 }
 
@@ -305,7 +337,7 @@ input {
   .flex-control-nav {
     display: none !important;
   }
-  #about-detail, #services-bg, #blog-bg {
+  #about-detail, #course-info-bg, #edcol-info-bg {
     display: none;
   }
   .filters li {
@@ -314,7 +346,7 @@ input {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .service {
+  .courses {
     width: 100%;
     padding-right: 0px;
   }
@@ -324,10 +356,10 @@ input {
   .project-slider {
     margin-bottom: 22px;
   }
-  .blog-icon {
+  .edcol-info-icon {
     width: 15%;
   }
-  .blog-title {
+  .edcol-info-title {
     width: 85%;
   }
   .social-link {
@@ -358,7 +390,7 @@ input {
   #menu li i {
     display: none;
   }
-  .service {
+  .courses {
     min-width: 100%;
     max-width: 100%;
   }

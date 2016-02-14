@@ -1,4 +1,7 @@
 $(document).foundation();
+
+//this hawtness gives dropdowns accesability without a mouse//
+//----------------------------------------------------------
 ( function( $ ) {
 	// Drastically modified from the function in the WordPress Twenty Fifteen theme
 	// Original source: https://github.com/WordPress/WordPress/blob/master/wp-content/themes/twentyfifteen/js/functions.js
@@ -13,3 +16,8 @@ $(document).foundation();
 	} );
 
 })( jQuery );
+
+//initiate wow.js for to trigger animations on scroll//
+//---------------------------------------------------
+var wow = new WOW();
+wow.init();

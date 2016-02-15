@@ -8,6 +8,8 @@
     transform: translateY(-50%);
 }
 
+// use   @include vertical-align;
+
 //Hero Area_______________
 //_________________________
 .hero {
@@ -15,20 +17,22 @@
     background: url("../img/edinburgh-college-home-main.jpg")center center;
     background-color: $purple;
     background-size: cover;
-    padding: 12rem;
-    overflow: hidden;
+    padding-top: 12rem;
     h1 {
         color: $white;
         text-align: center;
-        @include vertical-align;
-        font-size: 4rem;
+        font-size: 6rem;
+        font-family: "jubilat", sans-serif;
+        font-style: normal;
+        font-weight: 100;
     }
 }
 
 .hero-subnav {
+   
     float: none;
     position: relative;
-    top: 12rem;
+    padding-top: 12rem;
     text-align: center;
     margin-bottom: 0;
     li {

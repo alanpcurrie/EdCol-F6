@@ -1,3 +1,6 @@
+
+//Go for foundation!
+//-----------------
 $(document).foundation();
 
 //this hawtness gives dropdowns accesability without a mouse//
@@ -17,7 +20,7 @@ $(document).foundation();
 
 })( jQuery );
 
-//initiate wow.js for to trigger animations on scroll//
+//initiate wow.js for trigger animations on scroll//
 //---------------------------------------------------
 var wow = new WOW();
 wow.init();

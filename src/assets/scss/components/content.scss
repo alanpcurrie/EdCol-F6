@@ -1,3 +1,9 @@
+.fade-in {
+  // A long, long fade
+  @include mui-fade(in, $duration: 10s);
+}
+
+
 //general & pseudo classes//
 //-----------------------
 input {
@@ -45,7 +51,7 @@ input {
 
 .highlight {
     color: $dark-orange;
-    font-size: 5.5rem;
+    font-size: 4rem;
      font-family: "jubilat", sans-serif;
     font-style: normal;
     font-weight: 100;

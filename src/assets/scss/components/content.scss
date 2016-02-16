@@ -1,8 +1,7 @@
 .fade-in {
-  // A long, long fade
-  @include mui-fade(in, $duration: 10s);
+    // A long, long fade
+    @include mui-fade(in, $duration: 10s);
 }
-
 
 //general & pseudo classes//
 //-----------------------
@@ -44,7 +43,7 @@ input {
 //-----------
 .alt-h {
     font-size: 3.5rem;
-      font-family: "jubilat", sans-serif;
+    font-family: "jubilat", sans-serif;
     font-style: normal;
     font-weight: 100;
 }
@@ -52,7 +51,7 @@ input {
 .highlight {
     color: $dark-orange;
     font-size: 4rem;
-     font-family: "jubilat", sans-serif;
+    font-family: "jubilat", sans-serif;
     font-style: normal;
     font-weight: 100;
 }
@@ -60,7 +59,7 @@ input {
 .lowlight {
     color: $dark-purple;
     font-size: 3.5rem;
-      font-family: "jubilat", sans-serif;
+    font-family: "jubilat", sans-serif;
     font-style: normal;
     font-weight: 100;
 }
@@ -68,7 +67,7 @@ input {
 .lowlight-white {
     color: $white;
     font-size: 3.5rem;
-      font-family: "jubilat", sans-serif;
+    font-family: "jubilat", sans-serif;
     font-style: normal;
     font-weight: 100;
 }
@@ -81,8 +80,6 @@ input {
     font-weight: 100;
 }
 
-
-
 .alt-h {
     font-size: 36px;
 }
@@ -92,10 +89,8 @@ input {
     -webkit-backface-visibility: hidden;
 }
 
-
 //elements//
 //-------
-
 .btn {
     border: 2px solid #bbb;
     padding: 16px 28px 18px 28px;
@@ -214,8 +209,6 @@ input {
     overflow: hidden;
     background-color: $light-purple;
     text-align: center;
-   
-    
     .page-title {
         margin-bottom: 22px;
     }
@@ -307,113 +300,124 @@ input {
     }
 }
 
+.orbit {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+
 /***** SMARTPHONES *****/
 
 @media all and (max-width: 767px) {
-  #navigation {
-    background-color: #222;
-    padding-top: 25px;
-  }
-  #mobile-toggle {
-    display: block;
-  }
-  #menu {
-    float: left;
-    padding-top: 21px;
-    margin-bottom: 22px;
-    li {
-      float: none;
-      i {
-        display: none;
-      }
+    #navigation {
+        background-color: #222;
+        padding-top: 25px;
     }
-  }
-  .logo {
-    display: none;
-  }
-  .nav-logo {
-    margin-top: -3px;
-  }
-  p.lead {
-    font-size: 16px;
-  }
-  #home-slider .slides li h1 {
-    font-size: 32px;
-  }
-  .flex-control-nav {
-    display: none !important;
-  }
-  #about-detail, #course-info-bg, #edcol-info-bg {
-    display: none;
-  }
-  .filters li {
-    margin-bottom: 22px;
-    float: none;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .courses {
-    width: 100%;
-    padding-right: 0px;
-  }
-  .project {
-    width: 100%;
-  }
-  .project-slider {
-    margin-bottom: 22px;
-  }
-  .edcol-info-icon {
-    width: 15%;
-  }
-  .edcol-info-title {
-    width: 85%;
-  }
-  .social-link {
-    width: 100% !important;
-  }
-  .hero-screens {
-    display: none;
-  }
-  #clients {
-    padding-bottom: 55px;
-  }
-  #form-name, #form-email {
-    width: 100%;
-  }
+    #mobile-toggle {
+        display: block;
+    }
+    #menu {
+        float: left;
+        padding-top: 21px;
+        margin-bottom: 22px;
+        li {
+            float: none;
+            i {
+                display: none;
+            }
+        }
+    }
+    .logo {
+        display: none;
+    }
+    .nav-logo {
+        margin-top: -3px;
+    }
+    p.lead {
+        font-size: 16px;
+    }
+    #home-slider .slides li h1 {
+        font-size: 32px;
+    }
+    .flex-control-nav {
+        display: none !important;
+    }
+    #about-detail,
+    #course-info-bg,
+    #edcol-info-bg {
+        display: none;
+    }
+    .filters li {
+        margin-bottom: 22px;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .courses {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .project {
+        width: 100%;
+    }
+    .project-slider {
+        margin-bottom: 22px;
+    }
+    .edcol-info-icon {
+        width: 15%;
+    }
+    .edcol-info-title {
+        width: 85%;
+    }
+    .social-link {
+        width: 100% !important;
+    }
+    .hero-screens {
+        display: none;
+    }
+    #clients {
+        padding-bottom: 55px;
+    }
+    #form-name,
+    #form-email {
+        width: 100%;
+    }
 }
+
 
 /***** TABLETS PORTRAIT & LANDSCAPE *****/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .project {
-    width: 50%;
-  }
+    .project {
+        width: 50%;
+    }
 }
+
 
 /***** PORTRAIT TABLETS *****/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  #menu li i {
-    display: none;
-  }
-  .courses {
-    min-width: 100%;
-    max-width: 100%;
-  }
-  .form-upper {
-    width: 100%;
-    h5 {
-      border-right: none;
+    #menu li i {
+        display: none;
     }
-  }
-  .form-lower {
-    width: 100%;
-    margin-bottom: 22px;
-    h5 {
-      border: none;
+    .courses {
+        min-width: 100%;
+        max-width: 100%;
     }
-  }
-  #form-button {
-    width: 100%;
-  }
+    .form-upper {
+        width: 100%;
+        h5 {
+            border-right: none;
+        }
+    }
+    .form-lower {
+        width: 100%;
+        margin-bottom: 22px;
+        h5 {
+            border: none;
+        }
+    }
+    #form-button {
+        width: 100%;
+    }
 }

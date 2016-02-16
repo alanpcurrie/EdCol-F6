@@ -1,18 +1,31 @@
 <!doctype html>
 
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="myApp">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
+    <!--main-styles-->
     <link rel="stylesheet" href="assets/css/app.css">
+    <!--foundation-icons-->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <!--material-icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--font-awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script src="https://use.typekit.net/orc2bel.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  
+    
+    <!--typekit-->
+    <script src="https://use.typekit.net/orc2bel.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 
 </head>
 
@@ -24,6 +37,7 @@
     <div class="nav-mixed menu">
         <nav id="multi-level-nav" class="multi-level-nav" role="navigation">
             <ul>
+                <li><img class="nav-logo" src="/assets/img/einburgh-college-logo.png" alt="edinburgh-college-logo"></li>
                 <li><a href="#">Home</a></li>
                 <li class="has-children">
                     <a href="#">About<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child menu</span></button></a>
@@ -100,9 +114,25 @@
 
         <div class="large-10 small-10 columns">
 
-            <label for="course search" class="label" id="course-label">course search</label>
+            <label ng-model="query" for="course search" class="label" id="course-label">course search</label>
             <input type="search" placeholder="search for a course..." id="course-finder">
+
+            <label class="formgroup">by:
+                <select ng-model="artistOrder">
+                    <option value="name">Name</option>
+                    <option value="reknown">Reknown</option>
+                </select>
+            </label>
+
+            <label class="formgroup">
+                <input type="radio" ng-model="direction" name="direction" checked> ascending
+            </label>
+            <label class="formgroup">
+                <input type="radio" ng-model="direction" name="direction" value="reverse"> descending
+            </label>
+
         </div>
+<!--Magnifying glass icon-->
         <div class="large-2 small-2 columns">
             <p><span>
                    <i class="zmdi zmdi-search"></i></span> </p>
@@ -212,7 +242,7 @@
 
 <section class="information">
     <div class="row full-width">
-       <!-- Card layout -->
+        <!-- Card layout -->
         <div class="medium-4 columns">
             <div class="card">
                 <div class="image">
@@ -227,7 +257,7 @@
                 </div>
             </div>
         </div>
-         <!-- Card layout -->
+        <!-- Card layout -->
         <div class="medium-4 columns">
             <div class="card">
                 <div class="image">
@@ -242,7 +272,7 @@
                 </div>
             </div>
         </div>
-         <!-- Card layout -->
+        <!-- Card layout -->
         <div class="medium-4 columns">
             <div class="card">
                 <div class="image">
@@ -259,9 +289,9 @@
         </div>
     </div>
 </section>
-    <section class="information">
+<section class="information">
     <div class="row full-width">
-       <!-- Card layout -->
+        <!-- Card layout -->
         <div class="medium-4 columns">
             <div class="card">
                 <div class="image">
@@ -276,7 +306,7 @@
                 </div>
             </div>
         </div>
-         <!-- Card layout -->
+        <!-- Card layout -->
         <div class="medium-4 columns">
             <div class="card">
                 <div class="image">
@@ -291,7 +321,7 @@
                 </div>
             </div>
         </div>
-         <!-- Card layout -->
+        <!-- Card layout -->
         <div class="medium-4 columns">
             <div class="card">
                 <div class="image">
@@ -308,6 +338,9 @@
         </div>
     </div>
 </section>
+
+    
+
 <footer class="footer">
     <div class="row full-width">
         <div class="small-12 medium-3 large-4 columns">
@@ -334,14 +367,15 @@
             <h4>Follow Us</h4>
 
             <ul class="footer-links">
-                <!--tooltip example-->
-                <span data-tooltip aria-haspopup="true" class="has-tip-left" data-disable-hover="false" tabindex="1" title="follow on Google+">
-         <li><a href="#"><i class=" zmdi zmdi-google-plus zmdi-hc-lg small-icon"></i></a></li></span>
+       
+               
                 <span data-tooltip aria-haspopup="true" class="has-tip-left" data-disable-hover="false" tabindex="1" title="follow on Facebbok">
          
              <li><a href="#"><i class=" zmdi zmdi-facebook zmdi-hc-lg small-icon"></i></a></li></span>
                 <span data-tooltip aria-haspopup="true" class="has-tip-left" data-disable-hover="false" tabindex="1" title="follow on Twitter">
          <li><a href="#"><i class=" zmdi zmdi-twitter zmdi-hc-lg small-icon"></i></a></li></span>
+                <span data-tooltip aria-haspopup="true" class="has-tip-left" data-disable-hover="false" tabindex="1" title="follow on Google+">
+         <li><a href="#"><i class=" zmdi zmdi-google-plus zmdi-hc-lg small-icon"></i></a></li></span>
                 <span data-tooltip aria-haspopup="true" class="has-tip-left" data-disable-hover="false" tabindex="1" title="follow on Instagram">
          <li><a href="#"><i class=" zmdi zmdi-instagram zmdi-hc-lg small-icon"></i></a></li></span>
                 <span data-tooltip aria-haspopup="true" class="has-tip-left" data-disable-hover="false" tabindex="1" title="follow on linkedin">
@@ -375,9 +409,9 @@
 </footer>
   
 
-
+<!--main JS-->
     <script src="assets/js/app.js"></script>
-   
+<!--wow JS for motion UI integration-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 

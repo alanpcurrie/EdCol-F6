@@ -3,9 +3,25 @@
 
         <div class="large-10 small-10 columns">
 
-            <label for="course search" class="label" id="course-label">course search</label>
+            <label ng-model="query" for="course search" class="label" id="course-label">course search</label>
             <input type="search" placeholder="search for a course..." id="course-finder">
+
+            <label class="formgroup">by:
+                <select ng-model="artistOrder">
+                    <option value="name">Name</option>
+                    <option value="reknown">Reknown</option>
+                </select>
+            </label>
+
+            <label class="formgroup">
+                <input type="radio" ng-model="direction" name="direction" checked> ascending
+            </label>
+            <label class="formgroup">
+                <input type="radio" ng-model="direction" name="direction" value="reverse"> descending
+            </label>
+
         </div>
+<!--Magnifying glass icon-->
         <div class="large-2 small-2 columns">
             <p><span>
                    <i class="zmdi zmdi-search"></i></span> </p>

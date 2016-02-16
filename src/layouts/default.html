@@ -1,27 +1,40 @@
 <!doctype html>
 
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="myApp">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
+    <!--main-styles-->
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <!--foundation-icons-->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <!--material-icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--font-awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script src="https://use.typekit.net/orc2bel.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  
+    
+    <!--typekit-->
+    <script src="https://use.typekit.net/orc2bel.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 
 </head>
 
 <body>
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}}
-
+<!--main JS-->
     <script src="{{root}}assets/js/app.js"></script>
-   
+<!--wow JS for motion UI integration-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 

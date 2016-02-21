@@ -47,7 +47,7 @@
 $global-font-size: 110%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: #ff5722;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -76,14 +76,14 @@ $light-orange: scale-color($orange, $lightness: +40%);
 
 //Typography
 //----------
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,700italic,300italic,400italic|Oswald:400,700,300);
+@import  url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,400italic|Droid+Sans);
 $body-font-family: 'open sans 400', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 0.25rem;
 $global-text-direction: ltr;
 
 // 2. Breakpoints
@@ -113,7 +113,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: Oswald;
+$header-font-family: 'Roboto ';
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -232,8 +232,8 @@ $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
 
-$breadcrumbs-margin: 0 0 $global-margin 0;
-$breadcrumbs-item-font-size: rem-calc(14);
+$breadcrumbs-margin: .5 0 $global-margin 0;
+$breadcrumbs-item-font-size: rem-calc(16);
 $breadcrumbs-item-color: $dark-purple;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
@@ -245,6 +245,7 @@ $breadcrumbs-item-slash: true;
 // ----------
 
 $button-padding: 0.85em 1em;
+
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
@@ -358,10 +359,16 @@ $input-font-size: rem-calc(16);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
-$input-shadow: inset 0 1px 2px rgba($black, 0.1);
-$input-shadow-focus: 0 0 5px $medium-gray;
+//material start
+$input-border: 0;
+$input-border-focus: 0;
+$input-shadow: none;
+$input-shadow-focus: none;
+//material end
+//$input-border: 1px solid $medium-gray;
+//$input-border-focus: 1px solid $dark-gray;
+//$input-shadow: inset 0 1px 2px rgba($black, 0.1);
+//$input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: default;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
@@ -372,9 +379,10 @@ $input-radius: $global-radius;
 
 $label-background: $dark-purple;
 $label-color: foreground($label-background);
-$label-font-size: 0.9rem;
+$label-font-size: 1rem;
 $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
+
 
 // 21. Media Object
 // ----------------
@@ -565,3 +573,8 @@ $topbar-background: $light-gray;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 
+a {
+  &:link, &:visited, &:hover, &:active {
+    text-decoration: none;
+  }
+}

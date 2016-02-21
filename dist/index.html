@@ -34,11 +34,11 @@
      
     <section class="menu-section">
 
-    <div class="nav-mixed menu">
+    <div class="nav-mixed menu ">
         <nav id="multi-level-nav" class="multi-level-nav" role="navigation">
             <ul>
-                <li><img class="nav-logo" src="/assets/img/einburgh-college-logo.png" alt="edinburgh-college-logo"></li>
-                <li><a href="#">Home</a></li>
+                <li><img class="nav-logo " src="/assets/img/einburgh-college-logo.png" alt="edinburgh-college-logo"></li>
+                <li><a class='ink' href="#" >Home</a></li>
                 <li class="has-children">
                     <a href="#">About<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child menu</span></button></a>
                     <ul class="sub-menu">
@@ -67,7 +67,7 @@
 
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a class='ink' href="#" >Contact</a></li>
             </ul>
         </nav>
         <!-- #multi-level-nav .multi-level-nav -->
@@ -87,6 +87,7 @@
 </section>
     <!-- .menu-section -->
 <header class="hero">
+<div class="jumbotron">
 <h1>Where do you want to be?</h1>
 
   <ul class="hero-subnav">
@@ -97,7 +98,7 @@
     <li><a href="#">Study</a></li>
     <li><a target="_blank" href="#">Contact</a></li>
   </ul>
- 
+    </div>
 <!-- Breadcrumb-->
 </header>
  <nav aria-label="You are here:" role="navigation">
@@ -110,11 +111,14 @@
     
 
 <form>
-    <div class=" row collapse  course-search panel">
+    <div class=" row collapse  course-search ">
 
-        <div class="large-10 small-10 columns">
+        <div class="small-12 large-8  columns">
 
             <label ng-model="query" for="course search" class="label" id="course-label">course search</label>
+             
+              <span class="fa fa-search"></span>
+              
             <input type="search" placeholder="search for a course..." id="course-finder">
 
             <label class="formgroup">by:
@@ -132,17 +136,14 @@
             </label>
 
         </div>
-<!--Magnifying glass icon-->
-        <div class="large-2 small-2 columns">
-            <p><span>
-                   <i class="zmdi zmdi-search"></i></span> </p>
-        </div>
+
     </div>
 </form>
+
 <section id="course-info">
     <div id="course-info-bg"></div>
     <div class="row pad-bottom">
-        <div class="large-8 medium-8 columns">
+        <div class="large-8 medium-8 columns ">
             <div class="page-title">
                 <h2 class="intro_heading">Edinburgh College<span class="highlight">.</span></h2>
             </div>
@@ -156,9 +157,11 @@
                 </div>
                 <div class="courses-text ">
                     <h6>Students</h6>
-                    <p>
+                    <p>  Flat Button
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam aut sit necessitatibus quam perferendis dolorem, quisquam delectus obcaecati nulla quod aliquid voluptate veritatis voluptatum corporis doloremque rerum incidunt quae!
+                        
                     </p>
+                    <a class="raised-button  ink ">Learn More</a>
                 </div>
             </div>
 
@@ -172,6 +175,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam aut sit necessitatibus quam perferendis dolorem, quisquam delectus obcaecati nulla quod aliquid voluptate veritatis voluptatum corporis doloremque rerum incidunt quae!
                     </p>
+                   <a class="raised-button  ink ">Learn More</a>
                 </div>
             </div>
 
@@ -185,7 +189,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam aut sit necessitatibus quam perferendis dolorem, quisquam delectus obcaecati nulla quod aliquid voluptate veritatis voluptatum corporis doloremque rerum incidunt quae!
                     </p>
-
+  <a class="raised-button  ink ">Learn More</a>
                 </div>
 
             </div>
@@ -199,6 +203,8 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam aut sit necessitatibus quam perferendis dolorem, quisquam delectus obcaecati nulla quod aliquid voluptate veritatis voluptatum corporis doloremque rerum incidunt quae!
                     </p>
+                    <a class="raised-button  ink ">Learn More</a>
+                   
                 </div>
             </div>
         </div>
@@ -411,8 +417,8 @@
 
 <!--main JS-->
     <script src="assets/js/app.js"></script>
-<!--wow JS for motion UI integration-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+
 </body>
 
 </html>

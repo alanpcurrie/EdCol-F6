@@ -1,19 +1,31 @@
 //Search box_______________
 //_________________________
 .course-search {
-    background-color: $light-orange;
+    position: relative;
+    background-color: scale-color($orange, $lightness: +50%);
     padding: 4rem;
     max-width: 100%;
     i {
         font-size: 3.5rem;
-        color: $white;
+        color: $black;
         padding-left: 1.1rem;
         text-align: center;
+        position: fixed;
+    }
+    input {
+        text-indent: 22px;
+    }
+    .fa-search {
+        position: absolute;
+        margin-top: 3rem;
+        left: 5rem;
+        font-size: 1.5rem;
+        color: $black;
     }
 }
 
 #course-finder {
     padding: 2rem;
     font-size: 2rem;
-    border-radius: 0.5rem;
+    
 }

@@ -1,7 +1,9 @@
+
 @charset 'utf-8';
 
 @import 'settings';
 @import 'foundation';
+
 @import 'motion-ui';
 
 
@@ -42,11 +44,23 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'mixins.scss';
+
+@import 'material/color.scss';
+@import 'material/material.scss';
+@import 'material/animation.scss';
+@import 'material/tabs.scss';
+@import 'material/buttons.scss';
 
 @import 'components/nav.scss';
 @import 'components/header.scss';
 @import 'components/feature.scss';
 @import 'components/content.scss';
 @import 'components/footer.scss';
+
+
+
+
+
 
 

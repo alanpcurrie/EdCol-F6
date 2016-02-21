@@ -1,15 +1,3 @@
-//Vertical Align Mixin_______________
-//_________________________
-@mixin vertical-align {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-// use   @include vertical-align;
-
 //Hero Area_______________
 //_________________________
 .hero {
@@ -17,28 +5,29 @@
     background: url("../img/edinburgh-college-home-main.jpg")center center;
     background-color: $purple;
     background-size: cover;
-    padding-top: 12rem;
+    padding-top: 14rem;
     h1 {
         color: $white;
-        text-align: center;
-        font-size: 6rem;
-        font-family: "jubilat", sans-serif;
-        font-style: normal;
-        font-weight: 100;
+        padding-bottom: 4rem;
+        font-size: 5rem;
+        /*  @media only screen and (max-width: 64.5em) {
+            font-size: 4rem;
+            padding-top: 12rem;
+        }
+ */
     }
 }
 
 .hero-subnav {
-   
     float: none;
     position: relative;
-    padding-top: 12rem;
     text-align: center;
     margin-bottom: 0;
     li {
         float: none;
         display: inline-block;
         a {
+           
             padding: 0.9rem 1rem 0.75rem;
             font-size: 0.875rem;
             color: #fff;
@@ -46,14 +35,16 @@
             display: block;
             font-weight: bold;
             letter-spacing: 1px;
+              transition: 300ms ease-in-out;
             &.is-active {
-                background: rgba(250, 250, 250, 0.7);
+                background: rgba(250, 250, 250, 0.9);
                 color: #333;
             }
             &:hover {
-                background: rgba(250, 250, 250, 0.7);
+                background: rgba(250, 250, 250, 0.9);
                 color: #333;
                 transition: all .25s ease-in-out;
+                 
             }
         }
     }

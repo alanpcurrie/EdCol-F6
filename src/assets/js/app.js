@@ -3,7 +3,7 @@
 //-----------------
 $(document).foundation();
 
-//this hawtness gives dropdowns accesability without a mouse//
+//this gives dropdowns accesability without a mouse//
 //----------------------------------------------------------
 ( function( $ ) {
 	// Drastically modified from the function in the WordPress Twenty Fifteen theme
@@ -24,3 +24,13 @@ $(document).foundation();
 //---------------------------------------------------
 var wow = new WOW();
 wow.init();
+
+//waves.js for material effects
+//----------------------------
+
+Waves.init();
+    Waves.attach('.waves', ['waves-button', 'waves-float']);
+
+
+
+

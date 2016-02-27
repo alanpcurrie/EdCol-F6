@@ -2,9 +2,10 @@
 //_________________________
 .course-search {
     position: relative;
-    background-color: scale-color($orange, $lightness: +50%);
+    background-color: scale-color($orange, $lightness: +40%);
     padding: 4rem;
     max-width: 100%;
+
     i {
         font-size: 3.5rem;
         color: $black;
@@ -17,15 +18,42 @@
     }
     .fa-search {
         position: absolute;
-        margin-top: 3rem;
+        margin-top: 3.5rem;
         left: 5rem;
         font-size: 1.5rem;
         color: $black;
+        
+     
     }
 }
 
 #course-finder {
     padding: 2rem;
     font-size: 2rem;
-    
+
 }
+.formgroup{max-width: 16rem; }
+
+.col-highlight {
+    background-color: scale-color($orange, $lightness: +35%);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 33.33333%;
+    z-index: 2;
+    background-size: cover;
+    background-position: -450px, 0px;
+ 
+}
+
+
+
+@media all and (max-width: 767px) {
+    .col-highlight {
+        display: none;
+    }
+}
+
+#course-label{margin-bottom: .5rem;}

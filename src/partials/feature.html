@@ -12,17 +12,17 @@
             <label class="formgroup">sort by:
                 <select ng-model="artistOrder">
                     <option value="name">Name</option>
-                    <option value="reknown">Reknown</option>
+                    <option value="reknown">Campus</option>
                 </select>
             </label>
-
+<div class="radio-box">
             <label class="formgroup">
-                <input type="radio" ng-model="direction" name="direction" checked> ascending
+                <input type="radio" id="radio1" ng-model="direction" name="direction" checked> ascending
             </label>
             <label class="formgroup">
-                <input type="radio" ng-model="direction" name="direction" value="reverse"> descending
+                <input type="radio" id="radio2" class="radio"  ng-model="direction" name="direction" value="reverse"> descending
             </label>
-
+</div>
         </div>
         <div class=" medium-8 large-4  columns col-highlight">
     

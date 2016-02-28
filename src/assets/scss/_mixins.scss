@@ -26,6 +26,8 @@
 
 // opacity example - rgba(255,0,0,0),rgba(255,0,0,1));
 
+//vertical center mixin
+//--------------------
 @mixin center($horizontal: true, $vertical: true) {
   position: absolute;
 

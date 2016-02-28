@@ -1,15 +1,25 @@
+.breadcrumbs {
+    background-color:scale-color($white, $lightness: +30%);
+    padding: 0.75rem;
+    margin: 0;
+}
+
+
 //Hero Area_______________
 //_________________________
 .hero {
     text-align: center;
-    background: url("../img/edinburgh-college-home-main.jpg")center center;
+    background: linear-gradient(to bottom right, rgba(180, 66, 37, 0.40), rgba(256, 256, 256, 0.10)), url("../img/edinburgh-college-home-main.jpg")center center no-repeat;
     background-color: $purple;
     background-size: cover;
     padding-top: 14rem;
     h1 {
         color: $white;
         padding-bottom: 4rem;
-        font-size: 5rem;
+        font-size: 6rem;
+         font-family: "jubilat", sans-serif;
+    font-style: normal;
+    font-weight: 100;
         /*  @media only screen and (max-width: 64.5em) {
             font-size: 4rem;
             padding-top: 12rem;
@@ -37,11 +47,13 @@
             letter-spacing: 1px;
               transition: 300ms ease-in-out;
             &.is-active {
-                background: rgba(250, 250, 250, 0.9);
+                background: scale-color($white, $lightness: +25%);
+                opacity: .9;
                 color: #333;
             }
             &:hover {
-                background: rgba(250, 250, 250, 0.9);
+                background: scale-color($white, $lightness: +30%);
+                 opacity: .7;
                 color: #333;
                 transition: all .25s ease-in-out;
                  

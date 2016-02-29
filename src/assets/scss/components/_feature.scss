@@ -37,12 +37,12 @@
     margin-top: 0.75rem;
     max-width: 120px;
     padding: 10px;
-    background-color: scale-color($white, $lightness: +50%);
+    background-color: scale-color($orange, $lightness: +85%);
     border-radius: $global-radius;
 }
 
 form input::-webkit-input-placeholder {
-    color: $dark-gray;
+    color: $light-orange;
 }
 
 .formgroup {

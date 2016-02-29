@@ -27,7 +27,7 @@ var PATHS = {
     'bower_components/motion-ui/src/'
   ],
     javascript: [
-   'bower_components/angular/angular.js', 'bower_components/jquery/dist/jquery.js',
+    'bower_components/jquery/dist/jquery.js',
     'bower_components/what-input/what-input.js',
     'bower_components/foundation-sites/js/foundation.core.js',
     'bower_components/foundation-sites/js/foundation.util.*.js',

@@ -16,9 +16,7 @@
   ],
   "dependencies": {
     "foundation-sites": "~6.1.0",
-    "motion-ui": "~1.1.0",
-    "angular": "^1.5.0",
-    "wow": "wowjs#^1.1.2"
+    "motion-ui": "~1.1.0"
   },
   "private": true
 }

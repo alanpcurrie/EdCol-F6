@@ -134,26 +134,91 @@ As you've probably noticed in the examples above, you have access to a small, me
 <div class="row up-1 medium-up-3 large-up-5">
   <div class="column">
     <div class="color-block">
-      <span style="background: #2199e8"></span>
-      #2199e8
+      <span style="background: #db414b"></span>
+      #db414b
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #3adb76"></span>
-      #3adb76
+      <span style="background: #9d82b7"></span>
+      #9d82b7
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #ffae00"></span>
-      #ffae00
+      <span style="background: #d3741c"></span>
+      #d3741c
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #ec5840"></span>
-      #ec5840
+      <span style="background: #8a8a8a"></span>
+      #8a8a8a
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #0a0a0a"></span>
+      #0a0a0a
+    </div>
+  </div>
+</div>
+
+<div class="row up-1 medium-up-3 large-up-5">
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #db414b"></span>
+      #db414b
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #9d82b7"></span>
+      #9d82b7
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #d3741c"></span>
+      #d3741c
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #8a8a8a"></span>
+      #8a8a8a
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #0a0a0a"></span>
+      #0a0a0a
+    </div>
+  </div>
+</div>
+<div class="row up-1 medium-up-3 large-up-5">
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #db414b"></span>
+      #db414b
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #9d82b7"></span>
+      #9d82b7
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #d3741c"></span>
+      #d3741c
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #8a8a8a"></span>
+      #8a8a8a
     </div>
   </div>
   <div class="column">
@@ -221,10 +286,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione 
 These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the `.tiny`, `.small`, and `.large` classes.
 
 ```html_example
-<a href="#" class="primary large button">Large button</a>
-<a href="#" class="primary button">Regular button</a>
-<a href="#" class="primary small button">Small button</a>
-<a href="#" class="primary tiny button">Tiny button</a>
+<a href="#" class="primary large button ink">Large button</a>
+<a href="#" class="primary button ink">Regular button</a>
+<a href="#" class="primary small button ink">Small button</a>
+<a href="#" class="primary tiny button ink">Tiny button</a>
 ```
 
 ---
@@ -234,10 +299,10 @@ These buttons are primary calls to action and should be used sparingly. Their si
 These buttons are used for less important, secondary actions on a page.
 
 ```html_example
-<a href="#" class="secondary large button">Large button</a>
-<a href="#" class="secondary button">Regular button</a>
-<a href="#" class="secondary small button">Small button</a>
-<a href="#" class="secondary tiny button">Tiny button</a>
+<a href="#" class="secondary large button ink">Large button</a>
+<a href="#" class="secondary button ink">Regular button</a>
+<a href="#" class="secondary small button ink">Small button</a>
+<a href="#" class="secondary tiny button ink">Tiny button</a>
 ```
 
 

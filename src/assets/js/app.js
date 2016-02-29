@@ -20,10 +20,7 @@ $(document).foundation();
 
 })( jQuery );
 
-//initiate wow.js for trigger animations on scroll//
-//---------------------------------------------------
-var wow = new WOW();
-wow.init();
+
 
 //waves.js for material effects
 //----------------------------

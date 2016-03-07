@@ -2,6 +2,7 @@
 Layouts
 --------------------------------------------------------------*/
 
+
 .centered {
     margin: 0 auto;
     padding: 0 1em;
@@ -39,7 +40,6 @@ Layouts
         padding: 1em 1em;
         &:hover {
             background: scale-color($red, $lightness: -5%);
-           
         }
     }
 }
@@ -68,14 +68,15 @@ Layouts
             -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
             justify-content: space-between;
-             &:first-child{padding-left: 1rem;}
+            &:first-child {
+                padding-left: 1rem;
+            }
         }
         li {
             -webkit-flex: 1 0 auto;
             -ms-flex: 1 0 auto;
             flex: 1 0 auto;
             position: relative;
-            
         }
     }
     li.has-children > a {

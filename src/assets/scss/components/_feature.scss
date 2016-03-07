@@ -4,6 +4,7 @@
     position: relative;
     background-color: scale-color($orange, $lightness: +96%);
     padding: 4rem;
+    
     max-width: 100%;
     i {
         font-size: 3.5rem;
@@ -48,6 +49,8 @@ form input::-webkit-input-placeholder {
 .formgroup {
     max-width: 16rem;
 }
+
+
 
 .col-highlight {
     background-color: scale-color($purple, $lightness: +96%);

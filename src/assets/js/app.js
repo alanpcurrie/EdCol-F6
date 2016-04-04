@@ -28,42 +28,33 @@ $(document).foundation();
 Waves.init();
     Waves.attach('.waves', ['waves-button', 'waves-float']);
 
-//headroom
 
-//slide up top bar foundation
 
-var didScroll;
-var lastScrollTop = 0;
-var scrollAmount = 10; // Value of scroll amount
-var navbarHeight = $('.slideUp').outerHeight();
+ //search
+//-------
 
-$(window).scroll(function (event) {
-    didScroll = true;
-});
-
-setInterval(function () {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var sup = $(this).scrollTop();
-
-    if (sup > lastScrollTop && sup > navbarHeight) {
-        // On Scroll Down
-        $('.slideUp').css({
-            top: -$(this).outerHeight()
+ $('#course-finder').keyup(function(){
+            var searchField = $('#course-finder').val();
+            var regex = new RegExp(searchField, "i");
+            var output = '<div class="row">';
+            var count = 1;
+            $.getJSON('data.json', function(data) {
+              $.each(data, function(key, val){
+                if ((val.name.search(regex) != -1) || (val.location.search(regex) != -1)) {
+                  output += '<div class="medium-6 columns">';
+                  output += '<div class="medium-6 columns"><img class="img-responsive" src="'+val.avatar+'" alt="'+ val.name +'" /></div>';
+                  output += '<div class="medium-7 columns">';
+                  output += '<h5>' + val.name + '</h5>';
+                  output += '<p>' + val.location + '</p>'
+                  output += '</div>';
+                  output += '</div>';
+                  if(count%2 == 0){
+                    output += '</div><div class="row">'
+                  }
+                  count++;
+                }
+              });
+              output += '</div>';
+              $('#results').html(output);
+            }); 
         });
-    } else {
-        // On Scroll Up
-        if (sup + $(window).height() < $(document).height()) {
-            $('.slideUp').css({
-                top: 0
-            });
-        }
-    }
-
-    lastScrollTop = sup;
-}

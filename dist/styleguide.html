@@ -6,6 +6,15 @@
     <title>Style Guide</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <!--typekit-->
+    <script src="https://use.typekit.net/orc2bel.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 
     <!-- Style guide-specific CSS goes here. -->
     <style>
@@ -13,8 +22,11 @@
     .tabs.vertical {
       width: 100%;
       max-width: 100%;
-   
+
+
     }
+  
+
     /* This styles code blocks used for examples. */
     .ss-code code {
       display: block;
@@ -57,16 +69,15 @@
 
     <div class="column row">
       <h1>Edinburgh College Style Guide</h1>
-      <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this responsive front-end framework, check out the documentation, get help from the Foundation community, or request immediate technical support.</p>
-      
+      <p class="lead">This style guide was built for Edinburgh College to unify it's digital assets.</p>
+
     </div>
 
     <div class="column row"><div class="row collapse">
-      
+
       <div class="large-3 medium-4 columns">
         <ul class="vertical tabs" data-tabs id="ss-sections">
-            <li class="tabs-title is-active" aria-selected="true"><a href="#the-grid">The Grid</a></li>
-            <li class="tabs-title"><a href="#colors">Colors</a></li>
+            <li class="tabs-title is-active" aria-selected="true"><a href="#colors">Colors</a></li>
             <li class="tabs-title"><a href="#typography">Typography</a></li>
             <li class="tabs-title"><a href="#buttons">Buttons</a></li>
             <li class="tabs-title"><a href="#forms">Forms</a></li>
@@ -75,167 +86,11 @@
 
       <div class="large-9 medium-8 columns" data-tabs-content="ss-sections">
         <div class="tabs-content vertical">
-            <section class="tabs-panel is-active" id="the-grid">
-              <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized vertical columns, and don&#39;t know how to quick and easily get it all done. Solution: The awesome grid!</p>
+            <section class="tabs-panel is-active" id="colors">
+              <h1>Colors</h1><p class="lead">Edinburgh College base colours</p>
 
 <hr>
-<h2>Overview</h2><p>The grid is built around two key elements: rows and columns. Rows create a max-width and contain the columns, and columns create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a row or column.</p>
-<hr>
-<h2>Nesting</h2><p>In the Grid you can nest columns down as far as you&#39;d like. Just embed rows inside columns and go from there. Each embedded row can contain up to 12 columns.</p>
-<hr>
-<h2>How to Use</h2><p>Using this framework is easy. Here&#39;s how your code will look when you use a series of <div> tags to create vertical columns.</p>
-<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-6 medium-4 large-3 columns"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-6 medium-8 large-9 columns"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="row display">
-  <div class="small-12 large-4 columns">4</div>
-  <div class="small-12 large-4 columns">4</div>
-  <div class="small-12 large-4 columns">4</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-3 columns">3</div>
-  <div class="small-12 large-6 columns">6</div>
-  <div class="small-12 large-3 columns">3</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-2 columns">2</div>
-  <div class="small-12 large-8 columns">8</div>
-  <div class="small-12 large-2 columns">2</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-3 columns">3</div>
-  <div class="small-12 large-9 columns">9</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-4 columns">4</div>
-  <div class="small-12 large-8 columns">8</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-5 columns">5</div>
-  <div class="small-12 large-7 columns">7</div>
-</div>
-<div class="row display">
-  <div class="small-12 large-6 columns">6</div>
-  <div class="small-12 large-6 columns">6</div>
-</div>
-
-<hr>
-<h2>Nesting Rows</h2><p>In the Grid you can nest columns down as far as you&#39;d like. Just embed rows inside columns and go from there. Each embedded row can contain up to 12 columns.</p>
-<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-8 columns"</span>&gt;</span>8
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-8 columns"</span>&gt;</span>8 Nested
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-8 columns"</span>&gt;</span>8 Nested Again<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-4 columns"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-4 columns"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-4 columns"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="row display">
-  <div class="small-8 columns">8
-    <div class="row">
-      <div class="small-8 columns">8 Nested
-        <div class="row">
-          <div class="small-8 columns">8 Nested Again</div>
-          <div class="small-4 columns">4</div>
-        </div>
-      </div>
-      <div class="small-4 columns">4</div>
-    </div>
-  </div>
-  <div class="small-4 columns">4</div>
-</div>
-
-<hr>
-<h2>Small Grid</h2><p>As you&#39;ve probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.</p>
-<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-2 columns"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-10 columns"</span>&gt;</span>10, last<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-3 columns"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-9 columns"</span>&gt;</span>9, last<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="row display">
-  <div class="small-2 columns">2</div>
-  <div class="small-10 columns">10, last</div>
-</div>
-<div class="row display">
-  <div class="small-3 columns">3</div>
-  <div class="small-9 columns">9, last</div>
-</div>
-            </section>
-            <section class="tabs-panel " id="colors">
-              <h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
-
-<hr>
-<div class="row up-1 medium-up-3 large-up-5">
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #db414b"></span>
-      #db414b
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #9d82b7"></span>
-      #9d82b7
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #d3741c"></span>
-      #d3741c
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #8a8a8a"></span>
-      #8a8a8a
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #0a0a0a"></span>
-      #0a0a0a
-    </div>
-  </div>
-</div>
-
-<div class="row up-1 medium-up-3 large-up-5">
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #db414b"></span>
-      #db414b
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #9d82b7"></span>
-      #9d82b7
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #d3741c"></span>
-      #d3741c
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #8a8a8a"></span>
-      #8a8a8a
-    </div>
-  </div>
-  <div class="column">
-    <div class="color-block">
-      <span style="background: #0a0a0a"></span>
-      #0a0a0a
-    </div>
-  </div>
-</div>
+<!--colours at 100%-->
 <div class="row up-1 medium-up-3 large-up-5">
   <div class="column">
     <div class="color-block">
@@ -270,7 +125,7 @@
 </div>
             </section>
             <section class="tabs-panel " id="typography">
-              <h1>Typography</h1><p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
+              <h1>Typography</h1><p class="lead">This design uses Jubilat for headings and  Open-Sans for paragraph text.</p>
 
 <hr>
 <h2>Headings</h2><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
@@ -342,8 +197,6 @@
 <li>Series of checkboxes and radio buttons below within a <code>&lt;ul class=&quot;inline-list&quot;&gt;</code>.</li>
 <li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).</li>
 </ul>
-<hr>
-<h2>Learn All About Forms</h2><p>Check out the <a href="http://foundation.zurb.com/sites/docs">Foundation Docs</a> to learn about how flexible our forms are for creating different layouts. It works perfectly with the grid to meet all your form needs.</p>
 <hr>
 <h2>Form Layouts</h2><p>Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have another major advantage — they are full width by default. That means that inputs will run as wide as the column that contains them. However, you have two options which make these forms extremely versatile:</p>
 <ul>

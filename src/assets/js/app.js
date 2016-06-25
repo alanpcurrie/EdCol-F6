@@ -45,16 +45,16 @@ Waves.init();
                   output += '<div class="medium-6 columns"><img class="img-responsive" src="'+val.avatar+'" alt="'+ val.name +'" /></div>';
                   output += '<div class="medium-7 columns">';
                   output += '<h5>' + val.name + '</h5>';
-                  output += '<p>' + val.location + '</p>'
+                  output += '<p>' + val.location + '</p>';
                   output += '</div>';
                   output += '</div>';
-                  if(count%2 == 0){
-                    output += '</div><div class="row">'
+                  if(count%2 === 0){
+                    output += '</div><div class="row">';
                   }
                   count++;
                 }
               });
               output += '</div>';
               $('#results').html(output);
-            }); 
+            });
         });
